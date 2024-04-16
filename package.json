@@ -1,0 +1,28 @@
+{
+  "name": "api_autsupertest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "posts": "npx jest posts.spec.ts",
+    "comments": "npx jest comments.spec.ts",
+    "userSignUp": "npx jest userSignUp.spec.ts",
+    "login": "npx jest login.spec.ts",
+    "createTour": "npx jest createTour.spec.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.2"
+  },
+  "dependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/supertest": "^6.0.2",
+    "jest-html-reporters": "^3.1.7"
+  }
+}
