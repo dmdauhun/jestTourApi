@@ -11,7 +11,7 @@ describe('COMMENTS', () => {
         //expect(res).toHaveProperty('bod');
         expect(res.body[0]).toHaveProperty('id');
         expect(res.body[0]).toHaveProperty('email');
-        expect(res.body[0]).toHaveProperty('nam');
+        expect(res.body[0]).toHaveProperty('name');
         expect(Array.isArray(res.body)).toBe(true);
 
         //expect(res.body[0]).toHaveLength(100);

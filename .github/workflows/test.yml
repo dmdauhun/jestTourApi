@@ -4,7 +4,7 @@ on: push
     
 
 jobs:
-    
+
   jest-test:
     runs-on: ubuntu-latest
 
@@ -19,5 +19,17 @@ jobs:
     - name: Install npm dependencies
       run: npm install
 
-    - name: Run Jest Test
+    - name: Run Jest Test upload
       run: npx jest upload.spec.ts
+
+    - name: Run Jest Test comments
+      run: npx jest comments.spec.ts 
+
+    - name: Run Jest Test login
+      run: npx jest login.spec.ts 
+
+    - name: Run Jest Test create tour
+      run: npx jest createTour.spec.ts 
+
+    - name: Run Jest Test login
+      run: npx jest userSignUp.spec.ts 

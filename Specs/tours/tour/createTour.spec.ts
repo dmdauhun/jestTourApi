@@ -2,6 +2,7 @@ import * as supertest from "supertest"
 const request = supertest("localhost:8001/api/v1");
 import { user } from "../../../data/user";
 import { tour, createRandomTour, Neg1_noName, Neg2_longName, Neg3_shortName, Neg4_noDuration, Neg5_noMaxGroupSize, Neg6_noDifficulty, Neg7_noDifficulty_Empty, Neg8_noSummary_Empty } from "../../../data/tour";
+
 import { deleteFunction, loginFunction, signUp, createTourFunction } from '../../../data/helpers';
 
 let cookie: [x: string]
