@@ -19,4 +19,7 @@ jobs:
       run: npm install
 
     - name: Run Jest Test
-      run: npx jest specs/**/*.spec.ts 
+      run: npx jest upload.spec.ts
+
+    - name: Run Jest Test comments
+      run: npx jest comments.spec.ts 
