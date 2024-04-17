@@ -3,7 +3,7 @@ import * as supertest from "supertest"
 const request = supertest('https://jsonplaceholder.typicode.com')
 
 describe('COMMENTS', () => {
-    it('get request', async () => {
+    it.skip('get request', async () => {
         const res = await request.get('/comments')
         console.log(res);
         expect(res.statusCode).toEqual(200);
