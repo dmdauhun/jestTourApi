@@ -1,11 +1,10 @@
-name: Run Jest Tests Login 
+name: Run Jest Tests
 
 on: push
     
 
 jobs:
-
-
+  jest-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,10 +21,5 @@ jobs:
     - name: Run Jest Test login
       run: npx jest login.spec.ts 
 
-    # - name: Run Jest Test create tour
-    #   run: npx jest createTour.spec.ts 
-
-    # - name: Run Jest Test login
-    #   run: npx jest userSignUp.spec.ts
  
 
