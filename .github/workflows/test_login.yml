@@ -5,7 +5,7 @@ on: push
 
 jobs:
 
-  jest-test-login:
+
     runs-on: ubuntu-latest
 
     steps:

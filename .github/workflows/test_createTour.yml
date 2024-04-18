@@ -5,7 +5,7 @@ on: push
 
 jobs:
 
-  jest-test-createTour:
+
     runs-on: ubuntu-latest
 
     steps:

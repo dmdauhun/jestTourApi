@@ -4,7 +4,7 @@ on: push
     
 
 jobs:
-  jest-test-main:
+
     runs-on: ubuntu-latest
 
     steps:
