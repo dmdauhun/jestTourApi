@@ -1,10 +1,11 @@
-name: Run Jest Tests Main
+name: Run Jest Tests Upload 
 
 on: push
     
 
 jobs:
-  jest-test-main-upload-all:
+
+  jest-test:
     runs-on: ubuntu-latest
 
     steps:
@@ -18,8 +19,5 @@ jobs:
     - name: Install npm dependencies
       run: npm install
 
-    - name: Run Jest Test
-      run: npx jest upload.spec.ts
-
     - name: Run Jest Test comments
-      run: npx jest specs/**/*.spec.ts 
+      run: npx jest comments.spec.ts 

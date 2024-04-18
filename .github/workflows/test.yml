@@ -1,11 +1,11 @@
-name: Run Jest Tests Test 
+name: Run Jest Tests Upload 
 
 on: push
     
 
 jobs:
 
-  jest-test:
+  jest-test-upload:
     runs-on: ubuntu-latest
 
     steps:
