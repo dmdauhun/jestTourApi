@@ -1,6 +1,7 @@
 import * as supertest from "supertest";
 import { user } from "./user";
 import { createRandomTour, tour } from "./tour";
+
 const request = supertest("localhost:8001/api/v1");
 //import{cookie} from '/Specs/tours/tour/createTour.specs.ts'
 const requestSDET = supertest("https://practice-react.sdetunicorns.com/api/test");
@@ -53,3 +54,10 @@ export async function upload(files: string[]): Promise<any> {
           .send(tour)
 }
 
+
+// export async function deleteTour(tourId:string): Promise<any> {
+
+//     return await request
+//         .delete('/tours/tourId')
+        
+// }

@@ -181,3 +181,21 @@ export const tour1=
 }
 
 
+export let PosTour=
+{
+    name: faker.lorem.words(3),
+    duration: tour.duration,
+    maxGroupSize: tour.maxGroupSize,
+    difficulty: tour.difficulty,
+    price: tour.price,
+    summary: tour.summary.trim(),
+    describtion: tour.imageCover,
+    imageCover: tour.imageCover,
+    startLocation: {
+
+        coordinates: createRandomTour().startLocation
+    }  
+
+
+}
+
